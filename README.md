@@ -31,7 +31,7 @@ Nettoyage :
 Pour désactiver l'environnement virtuel, utilisez la commande ‘deactivate’.
 Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
-#Fichiers fournis :
+# Fichiers fournis :
 'test.py' 
 'input.txt' 
 'dockerfile' : pour le script python
