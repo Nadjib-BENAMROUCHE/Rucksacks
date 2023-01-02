@@ -14,13 +14,13 @@
 # Configuration : 
 - Créez une base de données PostgreSQL et configurez un utilisateur avec les privilèges appropriés : 
 
-database=postgres
+  database=postgres
 
-user=postgres
+  user=postgres
 
-password=1234
+  password=1234
 
-port=5433
+  port=5433
 - La base de données postgresql contient une table 'rucksacks' avec trois colonnes : "execution_time", "input_file" et "resultat" 
 Vous pouvez aussi créer la table en utilisation l'appel de la fonction 'Create_table' ligne 126 passer en commentaire dans le fichier 'test.py'
 
@@ -36,16 +36,16 @@ Pour désactiver l'environnement virtuel, utilisez la commande ‘deactivate’.
 Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
 # Fichiers fournis :
-'test.py' 
+  'test.py' 
 
-'input.txt'
+  'input.txt'
  
-'dockerfile' : pour le script python
+  'dockerfile' : pour le script python
 
-'requirements.txt' : contient les dépendances 
+  'requirements.txt' : contient les dépendances 
 
-'Dockerfile' : pour la base de données postgresql
+  'Dockerfile' : pour la base de données postgresql
 
-'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres. Lorsque vous exécutez docker-compose up, Docker construit l'image de l'application à partir du Dockerfile et du script Python, puis démarre le conteneur de l'application et le conteneur de la base de données. Le conteneur de l'application peut se connecter à la base de données en utilisant l'hôte 'my-postgres' et les informations d'identification de l'utilisateur [postgres] et du mot de passe [1234].
+  'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres. Lorsque vous exécutez docker-compose up, Docker construit l'image de l'application à partir du Dockerfile et du script Python, puis démarre le conteneur de l'application et le conteneur de la base de données. Le conteneur de l'application peut se connecter à la base de données en utilisant l'hôte 'my-postgres' et les informations d'identification de l'utilisateur : postgres et du mot de passe : 1234.
 
 
