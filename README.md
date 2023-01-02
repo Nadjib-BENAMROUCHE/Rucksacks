@@ -22,25 +22,24 @@ password=1234
 
 port=5433
 - La base de données postgresql contient une table 'rucksacks' avec trois colonnes : "execution_time", "input_file" et "resultat" 
-Vous pouvez aussi creer la table en utilisastion l'appel de la fonction 'Create_table' ligne 126 passer en commantaire dans le fichier 'test.py'
+Vous pouvez aussi créer la table en utilisation l'appel de la fonction 'Create_table' ligne 126 passer en commentaire dans le fichier 'test.py'
 
 # Exécution :
 1. Activez l'environnement virtuel si ce n'est pas déjà fait : 'source venv/bin/activate'
-2. Exécutez le script Python pour la verfication des resultats : 'python test.py input.txt' 
+2. Exécutez le script Python pour la vérification des resultats : 'python test.py input.txt' 
 Ou bien utiliser le fichier dockerfile pour créer l’image my-test3 et exécuter le script (‘sudo docker build -t my-test3 . ’ puis ‘sudo docker run my-test3’ )
-- Executez la commande 'sudo docker-compose up' pour que les deux conteneurs doivent fonctionner simultanément et communiquer entre eux
+- Exécutez la commande 'sudo docker-compose up' pour que les deux conteneurs doivent fonctionner simultanément et communiquer entre eux
 
 
 Nettoyage :
 Pour désactiver l'environnement virtuel, utilisez la commande ‘deactivate’.
-
 Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
 # Fichiers fournis :
 'test.py' 
 
-'input.txt' 
-
+'input.txt'
+ 
 'dockerfile' : pour le script python
 
 'requirements.txt' : contient les dépendances 
@@ -48,3 +47,4 @@ Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 'Dockerfile' : pour la base de données postgresql
 
 'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres
+
