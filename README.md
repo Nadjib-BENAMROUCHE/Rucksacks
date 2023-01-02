@@ -13,9 +13,13 @@
 
 # Configuration : 
 - Créez une base de données PostgreSQL et configurez un utilisateur avec les privilèges appropriés : 
+
 database=postgres
+
 user=postgres
+
 password=1234
+
 port=5433
 - La base de données postgresql contient une table 'rucksacks' avec trois colonnes : "execution_time", "input_file" et "resultat" 
 Vous pouvez aussi creer la table en utilisastion l'appel de la fonction 'Create_table' ligne 126 passer en commantaire dans le fichier 'test.py'
@@ -29,6 +33,7 @@ Ou bien utiliser le fichier dockerfile pour créer l’image my-test3 et exécut
 
 Nettoyage :
 Pour désactiver l'environnement virtuel, utilisez la commande ‘deactivate’.
+
 Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
 # Fichiers fournis :
