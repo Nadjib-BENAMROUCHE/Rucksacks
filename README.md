@@ -46,5 +46,6 @@ Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
 'Dockerfile' : pour la base de données postgresql
 
-'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres
+'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres. Lorsque vous exécutez docker-compose up, Docker construit l'image de l'application à partir du Dockerfile et du script Python, puis démarre le conteneur de l'application et le conteneur de la base de données. Le conteneur de l'application peut se connecter à la base de données en utilisant l'hôte 'my-postgres' et les informations d'identification de l'utilisateur [postgres] et du mot de passe [1234].
+
 
