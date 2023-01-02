@@ -33,8 +33,13 @@ Pour supprimer l'environnement virtuel, supprimez le répertoire ‘venv’.
 
 # Fichiers fournis :
 'test.py' 
+
 'input.txt' 
+
 'dockerfile' : pour le script python
+
 'requirements.txt' : contient les dépendances 
+
 'Dockerfile' : pour la base de données postgresql
+
 'docker-compose.yml' : pour relier le conteneur de la commande et le conteneur pour l'image postgres
